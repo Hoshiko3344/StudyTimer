@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Raleway', sans-serif;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden; /* Ensures the video does not overflow */
+}
+#video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire div without stretching */
+    z-index: -1;
+}
+#left{
+    background-color: rgba(5, 5, 5, 0.39);
+    width: 68vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+#right{
+    background-color: rgba(5, 5, 5, 0.562);
+    width: 32vw;
+    height: 100vh;
+    display: flex;
+    
+}
+#right #player{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 2%;
+    flex-direction: column;
+    justify-content: center;
+}
+#right #player iframe{
+    width: 100%;
+    height: 40vh;
+}
+#ytvid{
+    height: 10vh;
+    border-radius: 2vh;
+    object-fit: cover;
+}
+#ytvid iframe{
+ object-fit: contain;
+}
+#timer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    color:wheat;
+    gap: 2vw;
+
+}
+#timer #maintimer {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 2vh;
+    height: 70%;
+    width: 100%;
+    background-color: rgba(0, 14, 26, 0.288);
+    display: flex; /* Add display flex */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+}
+
+#display {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+
+#timer #controls{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1vw;
+    font-weight: 700;
+}
+#timer #controls input{
+    font-size: 2vw;
+    background-color: rgba(255, 228, 196, 0.589);
+    border: 2px solid #000000;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%; /* Make input boxes fill their container */
+    box-sizing: border-box;
+}
+#timer #controls input:focus{
+    outline: none;
+}
+
+#timer #controls button{
+    border: 3px solid rgba(0, 0, 0, 0.973);
+    background-color:rgba(0, 0, 0, 0.671);
+    color: wheat;
+    font-size: 1vh;
+    border-radius: 1vw;
+    width: 10vw;
+    height: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer #controls button:hover{
+    background-color:rgba(100, 0, 0, 0.671);
+    transition: background-color 0.2s ease;
+}
+#tasks{
+    position: relative;
+    /* background-color: rgb(0, 117, 117); */
+    height: 30%;
+    width: 80%;
+}
+#list #tasktest{
+    font-weight: bold;
+    color: wheat;
+    font-size: 3vw;
+}
+#list button{
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 1vw;
+    border: 1px black solid;
+    color: wheat;
+    font-weight: bold;
+    padding: 0 .5vw;
+    height: 4vh;
+}
+
+#list button:hover{
+    
+    background-color: rgba(199, 0, 0, 0.555);
+    border-radius: 1vw;
+    border: 1px black solid;
+    color: wheat;
+    font-weight: bold;
+    padding: 0 .5vw;
+    height: 4vh;
+    transition: background-color 0.2s ease;
+}
+
+#taskelem{
+    position: relative;
+    display: flex;
+    gap: 1vw;
+    justify-content: left;
+    align-items: center;
+}
+
+#adder{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+#adder button{
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 1vw;
+    border: 1px black solid;
+    color: wheat;
+    font-weight: bold;
+    padding: 0 .5vw;
+    height: 4vh;
+    transition: background-color 0.2s ease;
+}
+
+#adder button:hover{
+    background-color: rgba(160, 0, 0, 0.555);
+    border-radius: 1vw;
+    border: 1px black solid;
+    color: wheat;
+    font-weight: bold;
+    padding: 0 .5vw;
+    height: 4vh;
+}
+
+#adder input{
+    background-color: rgba(255, 228, 196, 0.589);
+    border: 2px solid black;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%; /* Make input boxes fill their container */
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+#adder input:focus{
+    outline: none;
+}

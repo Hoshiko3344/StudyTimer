@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horsify Study Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <video autoplay muted loop id="video-bg">
+            <source src="./Videos/videoplayback.mp4" type="video/mp4">
+        </video>
+        <div id="left">
+            <div id="timer">
+                <div id="maintimer">
+                    <div id="display"></div>
+                </div>
+                <div id="controls">
+                    <label for="hours">Hours:</label>
+                    <input type="number" id="hours" min="0" value="0">
+                    <label for="minutes">Minutes:</label>
+                    <input type="number" id="minutes" min="0" value="0">
+                    <label for="seconds">Seconds:</label>
+                    <input type="number" id="seconds" min="0" value="0">
+                    <br/>
+                    <button id="startBtn">Start Timer</button>
+                    <button id="stopBtn">Stop Timer</button>
+                </div>
+            </div>
+            <div id="tasks">
+                <div id="adder">
+                    <input type="text" id="AddTask">
+                    <button id="addbtn">Add</button>
+                </div>
+                <div id="list"></div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="player">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6zCID88oNjNv9zx6puDHKj?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <div id="ytvid"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
