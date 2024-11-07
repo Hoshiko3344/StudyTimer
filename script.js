@@ -33,27 +33,25 @@ function startTimer() {
     }, 1000);
 }
 
-// Function to stop the timer
+
 function stopTimer() {
     display.textContent = "00:00:00"
     clearInterval(timerInterval);
     chime.play()
 }
 
-// Wait for DOM content to load before attaching event listeners
+
 document.addEventListener("DOMContentLoaded", function() {
-    // Attach event listeners to buttons
+
     document.getElementById("startBtn").addEventListener("click", startTimer);
     document.getElementById("stopBtn").addEventListener("click", stopTimer);
 });
 
 
 
-
-// This function creates and initializes the YouTube player
 function onYouTubeIframeAPIReady() {
     var player = new YT.Player('ytvid', {
-        videoId: 'HhqWd3Axq9Y', // Replace VIDEO_ID with the ID of your live video
+        videoId: 'R6MNlWagZhk', //  video ID
         playerVars: {
             controls: 0, // Hide player controls
             autoplay: 0, // Autoplay the video
@@ -64,10 +62,11 @@ function onYouTubeIframeAPIReady() {
             rel: 0 // Disable related videos at the end
         },
         events: {
-            // You can add event handlers here if needed
+           
         }
     });
 }
+
 
 var tasklist = []
 var taskinput = document.getElementById("AddTask")
