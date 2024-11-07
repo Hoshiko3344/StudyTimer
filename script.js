@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // This function creates and initializes the YouTube player
 function onYouTubeIframeAPIReady() {
     var player = new YT.Player('ytvid', {
-        videoId: 'JWlKA9wmO64', // Replace VIDEO_ID with the ID of your live video
+        videoId: 'HhqWd3Axq9Y', // Replace VIDEO_ID with the ID of your live video
         playerVars: {
             controls: 0, // Hide player controls
             autoplay: 0, // Autoplay the video
